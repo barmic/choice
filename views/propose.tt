@@ -1,0 +1,55 @@
+<ol class="breadcrumb">
+  <li class="active"><a href="#">Type de choix</a></li>
+  <li><a href="#">Options</a></li>
+  <li>Paramétrage</li>
+  <li>Validation</li>
+</ol>
+<div class="step1">
+   <h2>Types de choix</h2>
+   <p class="lead">
+   Choisissez le type de choix que vous voulais.
+   </p>
+   <%FOREACH type IN types %>
+      <div class="panel panel-default">
+         <div class="panel-heading"><% type %></div>
+            <div class="panel-body">
+            <!--<% type-desc %>-->
+            <a class="btn btn-primary btn-large" href="/propose/<% type %>">Go !</a>
+            </div>
+         </div>
+      </div>
+   <%END%>
+   <div class="panel panel-default">
+      <div class="panel-heading">Vote machin</div>
+         <div class="panel-body">
+         Les participants donnent une note entre -2 et 2 pour chaque option.
+         Les participants ne voient pas les votes des autres participants avant cloture des votes.
+         <a class="btn btn-primary btn-large" href="/propose">Go !</a>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="step2">
+   <h2>Options</h2>
+   <p class="lead">
+   Ajouter des alternatives.
+   </p>
+</div>
+<div class="step3">
+   <h2>Paramétrage</h2>
+   <p class="lead">
+   Choisissez le type de choix que vous voulais.
+   </p>
+</div>
+<div class="step4">
+   <h2>Validation</h2>
+   <p class="lead">
+   Choisissez le type de choix que vous voulais.
+   </p>
+</div>
+<div class="step5">
+   <h2>Information</h2>
+   <p class="lead">
+   Choisissez le type de choix que vous voulais.
+   </p>
+</div>
